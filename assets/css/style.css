@@ -106,11 +106,11 @@ body {
     visibility: visible;
 }
 
-.form button {
+form button {
     cursor: pointer;
     background: var(--secondary-color);
     box-shadow: 4px 4px 8px #c19c66, -4px -4px 8px #fffaa4;
-    border: 1px solid #ec263c66;
+    border: 1px solid #07070766;
     color: #fff;
     font-size: 16px;
     padding: 0.618em 1.2em;
@@ -121,8 +121,8 @@ body {
     width: 100%;
 }
 
-.form button:active,
-.form button:focus {
+form button:active,
+form button:focus {
     outline: 0;
-    background-color: #fc364c;
+    background-color: #020202;
 }

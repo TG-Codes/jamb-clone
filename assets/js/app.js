@@ -41,7 +41,7 @@ $(document).ready(function() {
                 async: true,
                 beforeSend: function() {
                     $("#error").fadeOut("slow");
-                    $("#submit").html('Process.......');
+                    $("#submit").html('Processing....');
                 },
                 success: function(response) {
                     if (response.error = false) {

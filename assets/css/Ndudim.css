@@ -1,0 +1,22 @@
+/* h1 {
+    background-color: blue;
+    color: white;
+}
+.twitter {
+    background-color: cadetblue;
+    color: crimson;
+}
+#twitter {
+    background-color: darkblue;
+    color: white;
+} */
+.form-input{
+    margin-bottom: 10px;
+}
+.form-btn{
+    background-color: crimson;
+}
+fieldset{
+    padding: 4px;
+    margin-right: 5;
+}

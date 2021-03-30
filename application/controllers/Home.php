@@ -18,13 +18,13 @@ class Home extends CI_Controller {
     }
 
     // This handles the pages
-	public function view ($page = 'Home')
+	public function view ($page = 'Ndudim')
 	{
 		if( !file_exists('application/views/'.$page.'.php'))
 		{
 			show_404();
 		}
-        elseif ($page == 'login') {
+        elseif ($page == 'welcome_message') {
                     
 
             $this->load->view($page);
@@ -59,7 +59,7 @@ class Home extends CI_Controller {
 			$query2 = $this->Home_model->register($data);
 
 			$response['error'] = false;
-			$response['message'] = 'Your Registerations was Successful';
+			$response['message'] = 'Your Registration was Successful';
 		}
 		else{
 			$response['error'] = true;
@@ -68,9 +68,5 @@ class Home extends CI_Controller {
 
 		echo json_encode($response);
 	}
-
-
-
-		
 
 }

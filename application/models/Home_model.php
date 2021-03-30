@@ -35,7 +35,7 @@ class Home_model extends CI_Model {
 
       $condition = "email =" . "'" . $user['email'] . "' AND " . "password =" . "'" . $user['password'] . "'";
       $this->db->select('*');
-      $this->db->from('user');
+      $this->db->from('users');
       $this->db->where($condition);
       $this->db->limit(1);
       $query = $this->db->get();
@@ -54,7 +54,7 @@ class Home_model extends CI_Model {
 
 		$condition = "email =" . "'" . $email . "'";
 		$this->db->select('*');
-		$this->db->from('user');
+		$this->db->from('users');
 		$this->db->where($condition);
 		$this->db->limit(1);
 		$query = $this->db->get();
