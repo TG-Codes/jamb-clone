@@ -49,6 +49,14 @@ class Home extends CI_Controller {
 		$data['email'] = $this->input->post('email');
 		$data['password'] = $this->input->post('password');
 
+		/*8$data['fnmae']
+		$data = array(
+			'fname' => $this->input->post('fname'),
+
+		);*/
+
+
+
 		// validate double entires 
 
 		$query = $this->Home_model->Validate($data);
@@ -59,14 +67,18 @@ class Home extends CI_Controller {
 			$query2 = $this->Home_model->register($data);
 
 			$response['error'] = false;
+<<<<<<< Updated upstream
 			$response['message'] = 'Your Registration was Successful';
+=======
+			$response['message'] = 'Submitted';
+>>>>>>> Stashed changes
 		}
 		else{
 			$response['error'] = true;
-			$response['message'] = 'User Already Exist';
+			$response['message'] = 'User Already EXist';
 		}
 
-		echo json_encode($response);
+		echo json_encode($data);
 	}
 
 }

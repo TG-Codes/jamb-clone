@@ -18,7 +18,7 @@ class Home_model extends CI_Model {
       $this->db->limit(1);
       $query = $this->db->get();
       
-      if ($query->num_rows() == 1) {
+      if ($query->num_rows() > 0) {
       return true;
       } else {
       return false;
